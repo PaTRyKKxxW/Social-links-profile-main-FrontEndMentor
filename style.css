@@ -1,6 +1,69 @@
-.attribution{
-    font-size: 11px; text-align: center; 
+@font-face {
+  font-family: Inter;
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
-.attribution a{
-    color: hsl(228, 45%, 44%); 
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --DarkGrey: hsl(0, 0%, 12%);
+  --OffBlack: hsl(0, 0%, 8%);
+}
+body {
+  align-items: center;
+  font-family: Inter;
+  background-color: var(--OffBlack);
+}
+main {
+  align-items: center;
+  padding: 30px;
+  margin: 20vh auto;
+  background-color: var(--DarkGrey);
+  height: 60vh;
+  width: 25vw;
+  border-radius: 5%;
+}
+h1 {
+  color: var(--white);
+  margin: 0;
+}
+span {
+  color: var(--green);
+  font-size: 14px;
+}
+p {
+  color: var(--white);
+  font-size: 14px;
+  margin: 20px auto;
+}
+.centre {
+  text-align: center;
+  margin: 0 auto;
+}
+.centre img {
+  margin-bottom: 20px;
+  border-radius: 50%;
+  height: 30%;
+  width: 30%;
+}
+.centre button {
+  background-color: var(--Grey);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  width: 25vw;
+  height: 5vh;
+  margin: 5px auto;
+  font-weight: bold;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.centre button:hover {
+  background-color: var(--green);
+  color: var(--OffBlack);
 }
